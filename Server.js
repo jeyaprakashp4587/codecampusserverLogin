@@ -54,9 +54,9 @@ app.use("/Wallet", Wallet)
 app.use("/InterView", Interview)
 // 
 // Self-ping endpoint
-// app.get("/ping", (req, res) => {
-//   res.status(200).send("Server is alive!");
-// });
+app.get("/ping", (req, res) => {
+  res.status(200).send("Server is alive!");
+});
 // Port listening
 const port = process.env.PORT || 8080;
 server.listen(port, () => {
