@@ -64,7 +64,7 @@ server.listen(port, () => {
   // Self-ping every 60 seconds
    setInterval(async () => {
      try {
-       await axios.get(`https://codecampusserver-r6gw.onrender.com/ping`);
+       await axios.get(`https://codecampusserverlogin.onrender.com/ping`);
        console.log("Self-ping successful");
     } catch (error) {
        console.error("Error in self-ping:", error);
