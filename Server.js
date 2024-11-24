@@ -15,7 +15,7 @@ const Suggestions = require("./Router/Suggestions");
 const Activity = require("./Router/Activity");
 const Notification = require("./Router/Notification");
 const Placement = require("./Router/Placement");
-const socket = require("./Socket/Socket");
+// const socket = require("./Socket/Socket");
 const Interview = require("./Router/Interview")
 const Assignments = require("./Router/Assignments");
 const Wallet = require("./Router/Wallet");
@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({ origin: "*" }));
 // socket
-socket(server);
+// socket(server);
 // Connect databases
 DB1.on("connected", () => {
   console.log("DB1 is connected");
