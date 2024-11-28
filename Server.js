@@ -69,5 +69,5 @@ server.listen(port, () => {
     } catch (error) {
        console.error("Error in self-ping:", error);
      }
- }, 300000); // Ping every 60 seconds
+ }, 20 * 60* 1000); // Ping every 60 seconds
 });
